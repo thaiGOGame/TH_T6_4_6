@@ -1,0 +1,166 @@
+*{
+    font-size: 19px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(97,172,237,255);
+    color : rgb(255, 255, 255);
+}
+.contarnel
+{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+nav 
+{
+    display: flex;
+    border-bottom: 7px dotted rgb(255, 255, 255);
+}
+nav ul
+{
+    display: inline-flex;
+}
+nav ul li
+{
+    margin: 10px 20px;
+    padding: 10px;
+}
+nav > ul 
+{
+    list-style-type: none; 
+}
+nav> ul > li > a
+{
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 700;
+}
+article
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: 7px dotted white;
+    justify-content: space-around;
+    
+}
+@media screen and (max-width: 1300px){
+    article{
+        flex-wrap: wrap;
+    }
+}
+.article-left h3
+{
+    font-size: 40px;
+}
+.article-left p
+{
+    font-size: 25px;
+    padding-left: 10px;
+    color: rgb(210, 189, 189);
+}
+article .article-left img
+{
+    width:700px;
+    height:auto;
+}
+article .article-right h3
+{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+article .article-right p
+{
+    max-width: 900px;
+}
+article .article-right .input-user .form-row 
+{
+    display: flex;
+    margin-bottom: 5px;
+}
+article .article-right .input-user .form-row select
+{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    border-radius: 5px;
+}
+article .article-right .input-user .form-row
+{
+    display: flex;
+}
+article .article-right .input-user .form-row label
+{
+    min-width: 200px;
+}
+article .article-right .input-user .form-row input
+{
+
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    color:rgb(0, 0, 0)
+}
+article .article-right .input-user .form-row input::placeholder
+{
+    font-size: 14px;
+    color:rgb(210, 189, 189);
+}
+article .article-right .input-user .form-row input:focus::placeholder
+{
+    color: rgb(210, 189, 189);
+}
+article .article-right .input-user .form-row-s
+{
+    display: flex;
+    align-items: center;
+}
+article .article-right .input-user .form-row-s label
+{
+    max-width: 200px;
+}
+article .article-right .input-user .form-row-s input{
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    color:#000
+}
+article .article-right .input-user .form-row-s input::placeholder
+{
+    font-size: 14px;
+}
+article .article-right .input-user .form-row-s input:focus::placeholder
+{
+    color: #000;
+}
+article .article-right #Specific
+{
+
+    color:rgb(0, 0, 0);
+    width: 300px;
+    height: 100px;
+    background-color: aliceblue;
+    
+}
+article .article-right .form-row-s #Specific::placeholder
+{
+    vertical-align:text-top;
+    color: rgb(210, 189, 189);
+}
+article .article-right .input-user .click
+{
+    margin-top: 5px;
+    margin-left: 200px;
+}
+article .article-right .input-user .click button
+{
+    cursor: pointer;
+    color:rgb(0, 0, 0);
+    border: 1px dashed black;
+    background-color: antiquewhite;    
+}
+article .article-right .input-user 
+{
+    padding-top:10px;
+    padding-left: 30px;
+}

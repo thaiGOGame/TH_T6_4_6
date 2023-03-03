@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta name="description" content="Bài 13.Thao tác với các tag liên quan đến tạo FORM">
+    <meta name="author" content="Lương Quốc Thái">
+</head>
+<style>
+    html,body{
+        width: auto;
+    }
+    label { width: 300px; }
+</style>
+<body>
+    <h2>Contact Us</h2>
+    Use the following form to send to message to Example Cafe
+    <form action="verity">
+    <label>Your email <br><input type="text" name="Email" required size="29"></label><br><br>
+    <label>Message <br><textarea name="Message" id="Message" cols="30" rows="10"></textarea></label><br><br>
+    <label>How did you hear of us? <select name="Contactive Method" id="cm">
+        <option value="Google">Google</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Youtube">Youtube</option>
+    </select></label><br><br>
+    <label>Newsletter <input type="checkbox"> Ensure this box checked if you would like to receive email updates</label><br><br>
+    <input type="submit" value="Send message">
+</form>
+</body>

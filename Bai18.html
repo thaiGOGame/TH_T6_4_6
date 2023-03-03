@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta name="description" content="Bài 18.Sử dụng <DATALIST> trong <INPUT type=”text” ...>">
+    <meta name="author" content="Lương Quốc Thái">
+</head>
+<style>
+    html,body{
+        width: auto;
+    }
+    div{
+        background-color: antiquewhite;
+    }
+</style>
+<body>
+    <form action="" method="get" name="frmInfo">
+        Please indicate your area of interest:<br>
+        <input type="text" name="txtName" value="" size="20" maxlength="20" list="tech">
+        <datalist id="tech">
+            <option value="CSS">
+            <option value="HTML">
+            <option value="JavaScript">
+        </datalist>
+    </form>
+</body>

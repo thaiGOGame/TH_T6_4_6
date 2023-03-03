@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta name="description" content="Bài 16.Thao tác với các tag liên quan đến tạo FORM">
+    <meta name="author" content="Lương Quốc Thái">
+</head>
+<style>
+    html,body{
+        width: auto;
+    }
+</style>
+<body>
+    <form action="verity">
+    <h1>Travel reservation form</h1>
+    <h3>* denotes mandotory</h3>
+    <label for="fname">Full name*: </label><br>
+    <input type="text" id="fname" name="Full name" required placeholder="FirstName LastName"><br><br>
+    <label for="email">Email address*: </label><br>
+    <input type="text" id="email" name="Email Address" required placeholder="EMAIL_ADDRESS"><br><br>
+    <label for="tour">Select Tour Package</label><br>
+    <select name="Tour" id="tour" required><br><br>
+        <option value="Goa">Goa</option>
+        <option value="VietTravel">VietTravel</option>
+        <option value="VietJet">VietJet</option>
+        <option value="Vigo">Vigo</option>
+    </select><br><br>
+    <label for="date">Arrival date*:</label><br>
+    <input type="date" name="Arrival date" id="date" required><br><br>
+    <label for="number">Number of person*:</label><br>
+    <input type="number" name="Number of person" id="number" required placeholder="UNKNOWN_TYPE"><br><br>
+    <label for="avail">What would you want to avail?*</label><br>
+    <label for="A" name="avail">Boarding</label>
+    <input type="checkbox" id="A" name="Avail check"><br>
+    <label for="B" name="avail">Fooding</label>
+    <input type="checkbox" id="B" name="Avail check"><br>
+    <label for="C" name="avail">Sight seeing</label>
+    <input type="checkbox" id="C" name="Avail check"><br><br>
+    <label for="code">Discout coupon code</label> <br>
+    <input type="text" id="code" name="Discout coupon code" placeholder="UNKNOWN_TYPE"><br><br>
+    <label for="YesNo">Terms and conditions*</label><br>
+    <input type="radio" name="YesNo" id="yes" required>
+    <label for="yes">I agree &emsp;</label>
+    <input type="radio" name="YesNo" id="no" required>
+    <label for="no">I disagree</label><br><br>
+    <input type="submit" value="Complete revervation">
+</form>
+</body>
